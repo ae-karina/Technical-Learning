@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <style>
+        .eye {
+            color: red;
+            /* width: 20px;
+            height: 20px; */
+            font-size: 18px;
+            /* transition: .5s;
+            transform: rotate(0deg); */
+        }
+
+        /* div:hover {
+            transform: rotate(360deg);
+        } */
+        button {
+            width: 50px;
+            height: 30px;
+            background-color: #f40;
+            color: #fff;
+            border: 0;
+        }
+
+        button:hover {
+            background-color: pink;
+            color: red;
+        }
+
+        ul li {
+            width: 300px;
+            height: 50px;
+            border: 1px solid pink;
+            line-height: 50px;
+        }
+
+        ul li:after {
+            content: '\e666';
+            float: right;
+        }
+
+        ul li:hover::after {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iconfont icon-browse eye"></div>
+    <div class="iconfont icon-good"></div>
+
+    <!-- 该方法只适合在标签里面写，不适合在伪元素里面写 -->
+    <span class="iconfont">&#xe66d; 12</span>
+    <span class="iconfont">&#xe668</span>
+    <button class="iconfont">&#xe66f</button>
+
+
+    <ul>
+        <li class="iconfont">我是pink老师</li>
+    </ul>
+
+</body>
+
+</html>

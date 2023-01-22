@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 41px;
+            background-color: #fcfcfc;
+            border-top: 3px solid #f58600;
+            border-bottom: 1px solid #edeef0;
+        }
+
+        /* 我们需要给a添加宽度吗? */
+        .nav a {
+            /* 转换为行内块元素 */
+            display: inline-block;
+            height: 41px;
+            /* padding 可以撑开盒子  只要左右，不要上下内边距 */
+            padding: 0 15px;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            line-height: 41px;
+        }
+
+        .nav a:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">导航</a>
+        <a href="#">三个字</a>
+        <a href="#">新浪导航</a>
+        <a href="#">手机导航栏</a>
+    </div>
+</body>
+
+</html>

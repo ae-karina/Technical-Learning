@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 必须是button这类元素 同时这个button必须带有disabled属性 */
+        /* 只需要选择 无需调用 */
+        /* 权重11 */
+        button[disabled] {
+            cursor: not-allowed;
+        }
+
+        input[type=submit] {
+            color: red;
+        }
+
+        div[class^=icon] {
+            color: red;
+            font-size: 18px;
+        }
+
+        div[class$=icon] {
+            color: blue;
+            font-size: 18px;
+        }
+
+        div[class*=icon] {
+            color: pink;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>+</button>
+    <button>+</button>
+    <button>+</button>
+    <button disabled>_</button>
+    <button disabled>_</button>
+    <button disabled>_</button>
+    <hr>
+    <input type="reset" value="重置">
+    <input type="submit" value="提交">
+
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="a-icon">小图标a</div>
+    <div class="b-icon">小图标b</div>
+</body>
+
+</html>

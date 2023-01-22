@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, .3);
+            /* 背景不要忘了加 url */
+            background-image: url(./cimg/logo-mi2.png);
+            /* 背景不平铺 */
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* 背景位置 */
+            /* background-position: 0 0;   x  y */
+            /* 方位名词 left right center */
+            /* top  center  bottom */
+            /* background-position: left center; */
+            /* background-position: center left; */
+            /* background-position: right bottom; */
+            /* background-position: center center; */
+            /* 如果只写一个值，则另外一个值默认是 center */
+            /* background-position: left; */
+            /* background-position: top; */
+            /* background-position: center; */
+            /* 2. 可以利用精确单位 */
+            /* background-position: x坐标 y坐标; */
+            /* background-position: 10px 20px; */
+            /* background-position: 20px 10px; */
+            /* 距离左侧是 40px ，垂直是  居中对齐 */
+            background-position: 40px center;
+        }
+
+        body {
+            background-image: url(./cimg/hpjy.webp);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>

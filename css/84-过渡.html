@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 过渡  s必须写*/
+            /* transition: width 1s, background-color 1s; */
+            /* 所有有变化的属性 all  也可以省略 */
+            transition: all 1s;
+            /* transition: 1s; */
+
+        }
+
+        div:hover {
+            width: 400px;
+            background-color: purple;
+            /* transition: 1s; */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

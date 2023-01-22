@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 第一个孩子，并且是小li */
+        /* ul li:first-child {
+            background-color: red;
+        } */
+
+        /* 最后一个孩子，并且是小li */
+        /* ul li:last-child {
+            background-color: red;
+        } */
+
+        /* 选择第5个孩子，选择第几个孩子，n就是几 */
+        /* ul li:nth-child(5) {
+            background-color: red;
+        } */
+
+        /* 关键词 */
+        /* 偶数 */
+        /* ul li:nth-child(even) {
+            background-color: skyblue;
+        } */
+
+        /* 奇数 */
+        /* ul li:nth-child(odd) {
+            background-color: pink;
+        } */
+
+        /* 3. 公式 n默认从 0 开始 0123456 */
+        /* ul li:nth-child(2n) {
+            background-color: pink;
+        } */
+
+        /* ul li:nth-child(-n+3) {
+            background-color: pink;
+        } */
+        ul li:nth-child(n+3) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>第1个小li</li>
+        <li>第2个小li</li>
+        <li>第3个小li</li>
+        <li>第4个小li</li>
+        <li>第5个小li</li>
+        <li>第6个小li</li>
+        <li>第7个小li</li>
+        <li>第8个小li</li>
+    </ul>
+</body>
+
+</html>

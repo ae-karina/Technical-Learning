@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            /* 超出父盒子的全部切掉，有风险，实际开发很少这么写 */
+            overflow: hidden;
+            width: 800px;
+            background-color: pink;
+            /* height: 200px; */
+        }
+
+        .son {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .ershu {
+            width: 900px;
+            height: 300px;
+            background-color: black;
+        }
+
+        /* .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+            height: 0;
+            隐藏这个盒子
+            visibility: hidden;
+        } */
+
+        /* 实际开发一般用这个 */
+        /* .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="father clearfix">
+        <div class="son"></div>
+        <!-- <div style="clear:both;"></div> -->
+    </div>
+    <div class="ershu"></div>
+</body>
+
+</html>

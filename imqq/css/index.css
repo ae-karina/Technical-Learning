@@ -1,0 +1,139 @@
+/* css 初始化 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body, 
+html {
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:url(../images/banner.jpeg) no-repeat top center/cover;
+}
+.banner img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.pic1{
+    top: 110px;
+}
+
+.pic2{
+    top: 425px;
+}
+.pic3{
+    top: 520px;
+}
+.boxshadow{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 52px;
+    background:url(../images/linearbot.png) repeat-x;
+}
+
+/* 导航栏模块 */
+.topbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 99;
+}
+.w{
+    width: 960px;
+    height: 75px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+}
+.logo a{
+    display: block;
+    width: 106px;
+    height: 76px;
+    background: url(../images/imlogo_b.png) no-repeat left center;
+}
+
+.nav{
+    float: left;
+    margin-right: 35px;
+}
+.nav li{
+    float: left;
+    margin-right: 15px;
+}
+.nav li a{
+    display: block;
+    height: 76px;
+    line-height: 76px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.nav .active a{
+    background-color: #46b7f6;
+}
+.content h1{
+    height: 321px;
+    background-color: #fff;
+    text-align: center;
+}
+/* 第一张图片 */
+.first{
+    height: 600px;
+    background: url(../images/bg1.jpg) no-repeat top center/cover fixed;
+}
+.gt{
+    height: 584px;
+    background-color: #fff;
+}
+.gt .w{
+    overflow: hidden;
+    position: relative;
+    height: 584px;
+}
+.gt img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.second {
+    background-image: url(../images/bg2.jpg);
+}
+
+.second-gt{
+    height: 584px;
+    background-color: #fff;
+}
+.second-gt .w{
+    overflow: hidden;
+    position: relative;
+    height: 584px;
+}
+.second-gt img{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.footer{
+    height: 286px;
+    background-color: #2a2a2a;
+}

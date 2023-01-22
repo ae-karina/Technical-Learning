@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div { */
+        /* width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 100px solid blue;
+            border-bottom: 100px solid transparent; */
+        /* width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-left-color: pink; */
+        /* } */
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 400px;
+            /* background-color: pink; */
+            border: 1px solid pink;
+            margin: 100px auto;
+        }
+
+        .box::before,
+        .box::after {
+            position: absolute;
+            top: -50px;
+            left: 70px;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 25px solid transparent;
+            border-bottom-color: pink;
+        }
+
+        .box::after {
+            border-bottom-color: #fff;
+            top: -49px;
+        }
+
+        .arr {
+            width: 50px;
+            height: 50px;
+            border-top: 1px solid pink;
+            border-right: 1px solid pink;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div> -->
+    <div class="box"></div>
+
+    <div class="arr"></div>
+
+</body>
+
+</html>

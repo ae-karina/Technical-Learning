@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        /* 伪元素默认是行内元素  */
+        .box::before {
+            /* 隐藏的  不占位置*/
+            display: none;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        /* 鼠标经过box，显示的时before */
+        .box:hover::before {
+            /* 显示出来 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

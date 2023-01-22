@@ -1,0 +1,499 @@
+/* css 初始化代码  css reset */
+
+* {
+    /* 清除默认内外边距 */
+    margin: 0;
+    padding: 0;
+    /* 內减模式 */
+    box-sizing: border-box;
+}
+/* 去掉列表默认样式 */
+li {
+    list-style: none;
+}
+/* 去掉链接默认下划线 */
+a {
+    text-decoration: none;
+}
+/*去掉button 默认自带的边框*/
+button {
+border: none;
+}
+
+/* 解决图片底层有空白缝隙的bug */
+img{
+    vertical-align: middle;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+body {
+background-color: #f3f5f7;
+/* height: 3000px; */
+}
+   /* 学成在线版心 */
+.w {
+    width: 1200px;
+    margin: auto;
+ }
+
+ /* header头部模块 */
+.header{
+    height: 41px;
+    /* background-color: pink; */
+    margin: 30px auto;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+.logo{
+    float: left;
+}
+.nav{
+    float: left;
+    margin: 0 70px;
+}
+.nav ul li{
+    float: left;
+    margin-right: 15px;
+}
+.nav ul li a{
+    /* a是什么元素? */
+    /* 行内元素不能给上下 */
+    display: block;
+    padding: 8px 10px;
+    font-size: 18px;
+    color: #050505;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+.search{
+    float: left;
+}
+.search input{
+    float: left;
+    width: 241px;
+    height: 41px;
+    border: 1px solid #00a4ff;
+    /* 取消表单轮廓线 */
+    outline:none;
+    font-size: 14px;
+    padding-left:20px;
+    transition: all .4s;
+}
+.search input:focus{
+    width: 381px;
+}
+/* 可以更改placeholder的文字颜色 */
+.search input::placeholder{
+    color: #bfbfbf;
+}
+.search button{
+    float: left;
+    width: 51px;
+    height: 41px;
+    background-color: #00a4ff;
+}
+.user{
+    float: right;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+.user img{
+    /* 可以让图片和文字垂直居中 */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* banner 部分 */
+.banner{
+    height: 420px;
+    /* 上一级../ */
+    background: url(../images/banner2.png) no-repeat top center;
+    background-color: #1c036c;
+}
+
+.dot{
+    float: left;
+    position: relative;
+    width: 782px;
+    height: 420px;
+}
+.dot .prev,
+.next{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(225,255,255, .3);
+    top: 50%;
+    transform:translateY(-50%);
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+.dot .prev{
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+.dot .next{
+    right: 0; 
+    border-radius: 20px 0 0 20px;
+    
+}
+.dot ul{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 34px;
+}
+.dot ul li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-right: 16px;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 50%;
+}
+.dot ul li:last-child{
+    margin-right: 0px;
+}
+.dot li.active{
+    width: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.category{
+    float: left;
+    width: 190px;
+    height: 420px;
+    background: rgba(0, 0, 0, .3);
+    padding-top: 8px;
+}
+.category ul li a{
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    /* padding-right: 20px;
+    padding-left: 20px; */
+    padding: 0 20px;
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s;
+}
+/* 伪元素 */
+.category ul li a::after{
+    content: '>';
+    float: right;
+    /* margin-right: 20px; */
+}
+
+.category ul li a:hover{
+    background: rgba(0, 0, 0, .6); 
+    color: #00a4ff;
+    padding-left: 30px;
+}
+.course{
+    float: right;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+.course h2{
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-size: 18px;
+}
+.course ul{
+    margin-top: 8px;
+    padding: 0 20px;
+}
+.course ul li{
+    height: 60px;
+    padding-top: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.course ul li h4{
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.course ul li p{
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.all{
+    display: block;
+    /* width: 200px; */
+    height: 41px;
+    border: 1px solid #00a4ff;
+    margin: 5px 14px;
+    text-align: center;
+    line-height: 41px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+.all:hover{
+    background-color: #00a4ff;
+    color: #fff;
+}
+
+/* tag 标签模块 */
+.tag{
+    position: sticky;
+    /* 距离浏览器顶部是0px */
+    top: 0;
+    z-index: 999;
+    height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+    line-height: 60px;
+    /* 盒子阴影 */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+.tag h3{
+    float: left;
+    font-size: 16px;
+    color: #00a4ff;
+    margin: 0 30px;
+    
+}
+.good-items{
+    float: left;
+}
+.good-items a{
+    color: #050505;
+    font-size: 16px;
+    border-left: 1px solid #ccc;
+    padding: 0 30px;
+}
+.mod{
+    float: right;
+    margin-right: 26px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* 楼层 */
+.floorhd{
+    height: 40px;
+    /* background-color: pink; */
+    margin-top: 30px;
+}
+.floorhd h3{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+.floorhd .more{
+    float: right;
+    margin: 8px 25px 0 0;
+    color: #a5a5a5;
+}
+
+.reco-inner li{
+    position: relative;
+    top: 0;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /* 过渡 */
+    transition: all .2s;
+}
+.reco-inner li:hover{
+    top: -5px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+/* .reco-inner li:hover{
+    position: relative;
+    margin-top: 10px;
+    top: 10px;
+} */
+/* 结构伪类选择器 5n 就是 5的倍数5 10 */
+.reco-inner li:nth-child(5n){
+   margin-right: 0; 
+}
+.reco-inner  li>img{
+    position: absolute;
+    top: 0px;
+    /* right  是0 距离右侧是0 */
+    /* right: 10px; 距离右侧是10px */
+    right: -4px;
+}
+.reco-inner  li h4{
+    color: #050505;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 25px 20px 12px;
+}
+.reco-inner  li p{
+    font-size: 12px;
+    color: 999;
+    margin-left: 20px;
+}
+.reco-inner li p span{
+    color: #ff7c2d;
+}
+
+.floorhd ul{
+    float: left;
+    margin-left: 350px;
+}
+.floorhd ul li{
+    float: left;
+    margin-right: 70px;
+}
+.floorhd ul li a {
+    color: #868686;
+    font-size: 16px;
+}
+
+/* active 活动的 */
+.floorhd ul li .active{
+    color: #00a4ff;
+}
+.pro-inner{
+    height: 392px;
+    /* background-color: pink; */
+}
+.left{
+    float: left;
+    width: 228px;
+    height: 392px;
+    background-color: pink;
+}
+.right{
+    float: right;
+    width: 957px;
+    height: 392px;
+    /* background-color: purple; */
+}
+.right-top{
+    margin-bottom: 22px;
+}
+
+.right-bottom li{
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+}
+.right-bottom li:last-child{
+    margin-right: 0;
+}
+.right-bottom li h3{
+    height: 50px;
+    margin: 25px 20px 0;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+.right-bottom li p{
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-left: 20px;
+}
+.right-bottom li p span{
+    color:orange;
+}
+
+/* .footer 底部模块 */
+.footer {
+    height: 417px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+.foot-l{
+    float: left;
+    padding-left: 20px;
+}
+.foot-l p{
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+    margin: 25px 0px 15px;
+}
+.download{
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    color: #00a4ff;
+    font-weight: 700;
+
+}
+
+.foot-r{
+    float: right;
+}
+
+.foot-r dl {
+    float: left;
+    width: 200px;
+}
+
+.foot-r dl dt{
+    height: 30px;
+    color: #333;
+}
+.foot-r dl dd {
+    height: 22px;
+}
+.foot-r dl dd a {
+    font-size: 12px;
+    color: #333;
+}
+
+.subnav{
+    position: fixed;
+    /* left: 150px; */
+    /* left: 50%;
+    margin-left: -803px; */
+    /* right: 50%;
+    margin-right: 620px; */
+    left: 50%;
+    margin-left: 620px;
+    top: 50%;
+    margin-top: -240px;
+    width: 183px;
+    height: 470px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.subnav ul{
+    padding: 27px 25px 26px;
+}
+.subnav li{
+    padding-bottom: 18px;
+    /* background-color: pink; */
+}
+.subnav li:last-child{
+    padding-bottom: 0;
+}
+.subnav li a{
+    font-size: 14px;
+    color: #000;
+    /* background-color: yellow; */
+}
+.subnav li a.subac{
+    color: #00a4ff;
+}

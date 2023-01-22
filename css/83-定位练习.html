@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 872px;
+            margin: 100px auto;
+        }
+
+        .box li {
+            position: relative;
+            float: left;
+            width: 209px;
+            height: 125px;
+            background-color: pink;
+            margin-right: 12px;
+        }
+
+        .box li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5) url(./cimg/arr.png) no-repeat center center;
+            z-index: 1;
+            opacity: 0;
+            /* 过渡 */
+            transition: all .7s;
+        }
+
+        /* 当我们鼠标经过li，则里面的before伪元素透明度改为1 */
+        .box li:hover::before {
+            opacity: 1;
+        }
+
+        .box li:last-child {
+            margin-right: 0;
+        }
+
+        .box li img {
+            /* width: 209px;
+            height: 125px; */
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* 绝对定位和浮动定位的一个注意点： 如果盒子本身没有宽度，加了浮动和绝对定位，则宽度改为内容的宽度 */
+            width: 100%;
+            height: 20px;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <img src="./cimg/r2.jpg" alt="">
+                <div class="mask">今天学习绝对定位</div>
+            </li>
+            <li>
+                <img src="./cimg/r2.jpg" alt="">
+                <div class="mask">今天学习绝对定位</div>
+            </li>
+            <li>
+                <img src="./cimg/r2.jpg" alt="">
+                <div class="mask">今天学习绝对定位</div>
+            </li>
+            <li>
+                <img src="./cimg/r2.jpg" alt="">
+                <div class="mask">今天学习绝对定位</div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

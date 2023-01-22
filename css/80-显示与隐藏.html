@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        div:first-child {
+            /* 隐藏元素，但是还在html页面中 不占位置 */
+            /* display: none; */
+            /* 显示元素 */
+            /* display: block; */
+            /* 占位置，保留位置，也是隐藏元素 */
+            /* visibility: hidden; */
+            visibility: visible;
+        }
+
+        div:nth-child(2) {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

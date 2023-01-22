@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: red;
+            font-size: 20px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            /* 背景半透明，盒子里面的内容不会有透明影响 */
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: #000;
+            /* 让盒子半透明，里面的内容都会半透明 */
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        我是pink老师
+    </div>
+
+    <div class="box2">
+        我是pink老师
+    </div>
+</body>
+
+</html>

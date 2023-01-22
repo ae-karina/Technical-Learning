@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 0 15px;
+            /* 默认的盒子模型 */
+            box-sizing: content-box;
+        }
+
+        .box2 {
+            /* CSS3 新增了一个盒子模型 */
+            box-sizing: border-box;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">123</div>
+    <div class="box2">123</div>
+</body>
+
+</html>

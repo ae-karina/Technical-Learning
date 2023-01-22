@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 160px;
+            border: 1px solid red;
+            /* 1.强制文字一行显示 (nowrap 不允许换行)*/
+            white-space: nowrap;
+            /* 2. 溢出隐藏 */
+            overflow: hidden;
+            /* 3. 溢出的文字省略号(ellipsis)显示 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        【预售五天】罗蒙卫衣男士圆领外套2021秋季新款中青年时尚百搭纯色上衣 红色色 175
+    </div>
+    <script>
+        let box = document.querySelector('.box')
+        box.title = box.innerText
+    </script>
+</body>
+
+</html>

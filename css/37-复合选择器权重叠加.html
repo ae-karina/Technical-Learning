@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            color: red;
+        }
+
+        ul {
+            color: blue;
+        }
+
+        /* 不会有进位的出现，开发中建议最多嵌套5层 */
+        ul li {
+            color: pink;
+        }
+
+        /* 0,0,0,1 */
+
+        li {
+            color: red;
+        }
+
+        .first {
+            color: blue;
+        }
+
+        ul .first {
+            color: green;
+        }
+
+        .nav a {
+            color: red;
+        }
+
+        /* a.green {
+            color: green;
+        } */
+
+        .nav .green {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ul>
+        <li class="first">我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul> -->
+
+    <div class="nav">
+        <a href="#" class="green">导航栏</a>
+        <a href="#">导航栏</a>
+        <a href="#">导航栏</a>
+        <a href="#">导航栏</a>
+        <a href="#">导航栏</a>
+    </div>
+</body>
+
+</html>

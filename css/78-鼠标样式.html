@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(1) {
+            cursor: default;
+        }
+
+        li:nth-child(2) {
+            cursor: pointer;
+        }
+
+        li:nth-child(3) {
+            cursor: zoom-in;
+        }
+
+        li:nth-child(4) {
+            cursor: zoom-out;
+        }
+
+        li:nth-child(5) {
+            cursor: move;
+        }
+
+        li:nth-child(6) {
+            cursor: text;
+        }
+
+        li:nth-child(7) {
+            cursor: not-allowed;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .not {
+            cursor: not-allowed;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>默认的小白</li>
+        <li>小手</li>
+        <li>放大</li>
+        <li>缩小</li>
+        <li>移动</li>
+        <li>文本</li>
+        <li>禁用</li>
+    </ul>
+
+    <button>+</button>
+    <!-- disabled 禁用按钮 -->
+    <button disabled class="not">-</button>
+</body>
+
+</html>
