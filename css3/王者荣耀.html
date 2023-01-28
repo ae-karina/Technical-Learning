@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .box {
+      overflow: hidden;
+      width: 1400px;
+      margin: 100px auto;
+    }
+
+    .box li {
+      overflow: hidden;
+      position: relative;
+      float: left;
+      width: 340px;
+      height: 174px;
+      margin-right: 13px;
+      list-style: none;
+      border: 1px solid transparent;
+    }
+
+    .box a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .box li:hover {
+      border: 2px solid #af8b54;
+
+    }
+
+    .box li:last-child {
+      margin-right: 0;
+    }
+
+    .box ul a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+      transition: all .4s;
+    }
+
+    .box li:hover img {
+      transform: scale(1.1);
+    }
+
+    .hero-name {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      opacity: 1;
+      transition: all .4s;
+      z-index: 2;
+    }
+
+    .box li:hover .hero-name {
+      opacity: 0;
+    }
+
+    .showmask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .6);
+      text-align: center;
+      opacity: 0;
+      transition: all .4s;
+      /* z-index: 3; */
+    }
+
+    .hero-n {
+      display: block;
+      font-size: 23px;
+      color: #c3aa68;
+      letter-spacing: 2px;
+      margin-top: 45px;
+    }
+
+    .hero-skill {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #bbb5ac;
+    }
+
+    .hero-time {
+      display: block;
+      font-size: 14px;
+      color: #bbb5ac;
+    }
+
+    .box li:hover .showmask {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="./images/xiaoqiao.jpg" alt="">
+          <p class="hero-name">山海·琳琅生-小乔</p>
+          <div class="showmask">
+            <span class="hero-n">山海·琳琅生-小乔</span>
+            <span class="hero-skill">法师</span>
+            <span class="hero-time">上线时间：2023-01-21</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/yao.jpg" alt="">
+          <p class="hero-name">山海·苍雷引-曜</p>
+          <div class="showmask">
+            <span class="hero-n">山海·苍雷引-曜</span>
+            <span class="hero-skill">战士</span>
+            <span class="hero-time">上线时间：2023-01-21</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/makeboluo.jpg" alt="">
+          <p class="hero-name">山海·玄木吟-马可波罗</p>
+          <div class="showmask">
+            <span class="hero-n">山海·玄木吟-马可波罗</span>
+            <span class="hero-skill">射手</span>
+            <span class="hero-time">上线时间：2023-01-21</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/yaou.jpg" alt="">
+          <p class="hero-name">山海·碧波行-瑶</p>
+          <div class="showmask">
+            <span class="hero-n">山海·碧波行-瑶</span>
+            <span class="hero-skill">辅助</span>
+            <span class="hero-time">上线时间：2023-01-21</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

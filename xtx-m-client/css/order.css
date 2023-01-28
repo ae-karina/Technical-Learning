@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f7f7f8;
+}
+a{
+  text-decoration: none;
+}
+/* 主题体区域 */
+
+.main{
+  padding: 10px 10px 80px;
+}
+/* 公共部分 */
+.main>div{
+  background-color: #fff;
+  border-radius:5px ;
+  padding: 10px 15px 10px 10px;
+  margin-bottom: 10px;
+}
+
+/* 用户信息模块 */
+.order-msg{
+  display: flex;
+  padding-right: 0 !important;
+  align-items: center;
+}
+
+.location{
+	width: 30px;
+	height: 30px;
+	background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 10px;
+}
+.order-msg .info{
+  flex: 1;
+}
+
+.order-msg .info .uname{
+  font-size: 15px;
+  margin-right: 10px;
+}
+.order-msg .info .tel{
+  font-size: 13px;
+}
+.order-msg .info p:nth-child(2){
+  margin-top: 13px;
+  line-height: 18px;
+  font-size: 12px;
+}
+.more{
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #888888;
+}
+
+/* 商品信息模块 */
+.goods{
+  display: flex;
+}
+.goods .pic{
+  width: 85px;
+  height: 85px;
+  margin-right: 12px;
+}
+.goods .pic img{
+  width: 100%;
+  height: 100%;
+}
+.goods .info{
+  flex: 1;
+}
+
+.goods .info h4{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.goods .info .youhui{
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.goods .info .special{
+  display: inline-block;
+  padding: 5px;
+  font-size: 11px;
+  color: #888888;
+  background-color:#f7f7f8;
+  border-radius: 3px;
+}
+
+.goods .info .price{
+  color: #cf4444;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.goods .info .price em{
+  font-size: 16px;
+  font-style: normal;
+}
+
+.goods .info .price del{
+  color: #999;
+  margin-left: 5px;
+}
+.goods .count{
+  margin-top: 20px;
+}
+
+/* 配送模块 */
+.panel{
+  font-size: 13px;
+  color: #262626;
+}
+.panel .remark{
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.panel .remark p:nth-child(1){
+  /* 最小宽度  不会小于60像素*/
+  min-width: 60px;
+}
+.panel .remark p:nth-child(2){
+  margin-left: 28px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.panel .express,.panel .payment{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.amount .sum{
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount .freight{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.amount .discount{
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount .discount p:nth-child(2){
+  color:#cf4444 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 支付盒子 */
+.pay-order{
+  display: flex;
+  /* 主轴上分布 两侧对齐 */
+  justify-content: space-between;
+  /* 侧轴垂直居中 */
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 79px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.sum span{
+  color: #cf4444;
+}
+.sum span em{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.pay a{
+  display: block;
+	width: 91px;
+	height: 35px;
+	background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+	border-radius: 3px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  font-size: 13px;
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 10rem;
+      height: 10rem;
+      background-color: pink;
+    }
+
+    .box2 {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="box2"></div>
+  <!-- 引入flexible.js 文件   检测屏幕大小， 修改html文字大小 都 这个js做了  -->
+  <!-- 屏幕分成10等份，每一份是 37.5 px 也就是 1rem = 37.5px; -->
+  <!-- 我有一个 375px 的盒子，那么写 rem 是多少？   375px / 37.5px = 10rem  -->
+  <!-- 我需要一个 75*75px 一个盒子，那么需要 75 / 37.5 = 2 rem? -->
+  <script src="./js/flexible.js"></script>
+</body>
+
+</html>
+<!-- node webapi -->

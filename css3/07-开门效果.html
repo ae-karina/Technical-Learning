@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      overflow: hidden;
+      width: 1366px;
+      height: 600px;
+      /* background-color: pink; */
+      margin: 0 auto;
+      background: url(./images/bg.jpg)no-repeat;
+    }
+
+    .box::before,
+    .box::after {
+      content: '';
+      width: 50%;
+      height: 600px;
+      /* background-color: pink; */
+      /* 过渡 */
+      transition: all .4s;
+      background: url(./images/fm.jpg) no-repeat;
+    }
+
+    .box::before {
+      float: left;
+    }
+
+    .box::after {
+      float: right;
+      background-color: purple;
+      /* 背景图片右对齐 */
+      background-position: right;
+    }
+
+    /* 鼠标经过谁 box，谁拉开 after before*/
+    /* before走的left盒子自身的宽度 */
+    .box:hover::before {
+      transform: translateX(-100%);
+    }
+
+    .box:hover::after {
+      transform: translateX(100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      perspective: 500px;
+    }
+
+    img {
+      transition: all 10s;
+      display: block;
+      margin: 100px auto;
+    }
+
+    img:hover {
+      /* transform: rotateZ(360deg); */
+      /* 1turn就是一圈 等价于 360度 */
+      /* transform: rotateZ(1turn); */
+      /* transform: rotateZ(.5turn); */
+      /* 正值是向屏幕转的 */
+      /* x轴旋转 左手法则，四个手指指向的正值的旋转方向*/
+      /* transform: rotateX(360deg); */
+      /* 正值向右 */
+      /* Y轴旋转 左手法则， 大拇指朝下指， 四个手指弯曲的方向就是正值 */
+      transform: rotateY(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./images/hero.jpeg" alt="">
+</body>
+
+</html>

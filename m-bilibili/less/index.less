@@ -1,0 +1,155 @@
+// 导入 base.less
+@import url(./base.less);
+// 定义基准值变量
+@vw: 3.75vw;
+// 定义颜色
+@color:#fb7299;
+// 悬停的头部
+.suspension-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  // navbar
+  .m-navbar{
+    padding: 0 (12 / @vw) 0 (18/@vw) ;
+    height: (44 / @vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      i{
+      color:@color;
+      font-size: (28/@vw);
+    }
+    }
+
+
+
+  .right{
+    display: flex;
+    .search{
+      i{
+        color: #ccc;
+        font-size: (22 / @vw);
+      }
+    }
+    .face{
+      overflow: hidden;
+      width: (24/@vw);
+      height: (24/@vw);
+      margin: 0 (18/@vw) 0 (21/@vw);
+      border-radius: 50%;
+    }
+    .app-btn{
+      width: (72/@vw);
+      height: (24/@vw);
+    }
+   } 
+  }
+
+  // channel-menu
+  .channel-menu{
+    position: relative;
+    display: flex;
+    height: (40 /@vw);
+    border-bottom: 1px solid #f2f2f2;
+    .tabs{
+      overflow: hidden;
+      flex: 1;
+      .tabs-list{
+        display: flex;
+        a{
+          font-size: (14/@vw);
+          padding: 0 (16 / @vw);
+          line-height: (40 /@vw);
+          // 文字不允许换行
+          white-space: nowrap;
+        }
+        .active{
+          color: @color
+          ;
+        }
+        // 红色线
+        .line{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: (28/@vw);
+          height: (2/@vw);
+          background-color: @color;
+          transform: translateX((16 /@vw));
+        }
+      }
+    }
+
+    .after{
+      width: (40 / @vw);
+      height: (40 / @vw);
+      background-color: #fff;
+      text-align: center;
+      line-height: (40 / @vw);
+    }
+  }
+}
+
+// 页面主体部分
+.m-home{
+  padding-top: (84 / @vw);
+  .video-list{
+    padding: 0 (5/@vw);
+    display: flex;
+    // 强制自动换行
+    flex-wrap: wrap;
+    .video-item{
+      width: 50%;
+      padding: (8 / @vw) (5 / @vw);
+      .card{
+        position: relative;
+        height: (97 / @vw);
+        .count{
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          color: #fff;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          font-size: (12 / @vw);
+          height: (27 /@vw);
+          background: linear-gradient(0deg,rgba(0,0,0,.85),transparent);
+        }  
+      }
+
+      >p{
+        font-size: (12 / @vw);
+        margin-top: (6 / @vw);
+      }
+    }
+  }
+}
+
+// 底部的盒子
+.openapp{
+  position: fixed;
+  left: 0;
+  bottom: (30 / @vw);
+  width: 100%;
+  .app{
+    width: (351 /@vw);
+    height: (37 /@vw);
+    background-color: @color;
+    border-radius: (18 /@vw);
+    margin: auto;
+    text-align: center;
+    line-height: (37 /@vw);
+    color: #fff;
+    font-size: (14 /@vw);
+    box-shadow: 0 0.53333vmin 2.66667vmin rgb(0 0 0 / 20%);
+    i{
+      margin-right: (5 /@vw);
+    }
+  }
+}

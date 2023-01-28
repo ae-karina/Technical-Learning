@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* 弹性容器，flex布局 */
+      display: flex;
+      /* 会让里面所有的弹性盒子沿着主轴排列 */
+      width: 800px;
+      height: 200px;
+      border: 1px solid pink;
+      margin: 0 auto;
+    }
+
+    .box div {
+      /* 伸缩比 每个孩子占几份 */
+      flex: 1;
+      background-color: pink;
+    }
+
+    .box div:nth-child(1) {
+      flex: 2;
+      margin-right: 15px;
+
+    }
+
+    .box div:nth-child(even) {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+</body>
+
+</html>

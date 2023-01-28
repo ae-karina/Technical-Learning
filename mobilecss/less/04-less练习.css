@@ -1,0 +1,16 @@
+.father {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.father .son {
+  width: 150px;
+  height: 150px;
+  background-color: skyblue;
+}
+.father:hover .son {
+  background-color: hotpink;
+}

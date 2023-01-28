@@ -1,0 +1,24 @@
+
+
+
+.box{
+
+  // 伪元素
+  &::before{
+    content: '';
+  }
+  // 鼠标经过
+  // &:hover{
+  //   left: 110px;
+  // }
+
+  // 鼠标经过之后，伪元素 移动 .box:hover::before
+  // &:hover{
+  //   &::before{
+  //     left: 110px;
+  //   }
+  // }
+  &:hover::before{
+    left: 110px;
+}
+}

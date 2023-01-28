@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    /* 第一步，定义动画（声明动画） */
+    @keyframes gun {
+
+      /* 开始 */
+      from {
+        transform: translateX(0px);
+      }
+
+      /* 结束 */
+      to {
+        transform: translateX(1000px) rotate(1turn);
+
+      }
+    }
+
+    /* 第二步， 使用动画（调用动画） */
+    .box:first-child {
+      /* animation: 动画名 时间; */
+      /* linear 匀速动画  */
+      /* 延迟时间   动画什么时候开始单位还是s */
+      /* infinite 无限循环 播放动画 */
+      /* alternate  跑马灯 */
+      /* forwards 让动画停留在最后一帧 */
+      animation: gun 2s linear forwards;
+    }
+
+    .box:hover {
+      /* 鼠标经过暂停动画 */
+      animation-play-state: paused;
+    }
+
+    /* 逐帧动画  
+    补间动画 */
+
+    .heart {
+      width: 50px;
+      height: 100px;
+      background-color: red;
+      border-radius: 25px 25px 0 0;
+      transform: rotate(-45deg);
+    }
+
+    .heart1 {
+      width: 50px;
+      height: 100px;
+      background-color: red;
+      border-radius: 25px 25px 0 0;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    滚起来
+  </div>
+  <div class="heart"></div>
+  <div class="heart1"></div>
+</body>
+
+</html>

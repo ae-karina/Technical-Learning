@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      position: relative;
+      width: 80%;
+      background-color: pink;
+      margin: 0 auto;
+    }
+
+    .box div {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+    }
+
+    .box div:nth-child(2) {
+      background-color: tomato;
+      width: 100%;
+      padding: 0 100px;
+      box-sizing: border-box;
+    }
+
+    .box div:nth-child(1),
+    .box div:nth-child(3) {
+      position: absolute;
+      top: 0;
+    }
+
+    .box div:nth-child(1) {
+      left: 0;
+    }
+
+    .box div:nth-child(3) {
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div></div>
+    <div>123123123</div>
+    <div></div>
+  </div>
+</body>
+
+</html>

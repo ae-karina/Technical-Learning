@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>游乐园首页</title>
+  <!-- 引入图标文件 -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+  <!-- 引入 index.css 文件 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    /* 如果超过540像素了,就不要再缩放页面,而我们的页面通过rem */
+    /* 不让rem缩放，实际不让 html文字大小有变化 */
+    @media (min-width: 540px) {
+      html {
+        font-size: 54px !important;
+      }
+    }
+
+    @media (max-width: 320px) {
+      html {
+        font-size: 32px !important;
+      }
+    }
+
+    /* body最大宽度是 540px */
+    body {
+      max-width: 540px;
+      /* 页面最小宽度是 320px */
+      min-width: 320px;
+      /* 让页面不管怎么拉都是居中 */
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 主体区域 -->
+  <div class="main">
+    <!-- banner 区域 -->
+    <div class="banner">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./uploads/banner_1.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 活动标题模块 -->
+    <div class="title">
+      <h4>乐园活动</h4>
+    </div>
+
+    <!-- 活动选项模块 -->
+    <div class="item">
+      <div class="pic">
+        <a href="#">
+          <img src="./uploads/item_1.png" alt="">
+        </a>
+        <div class="status">
+          进行中
+        </div>
+        <div class="collect">
+          <i class="iconfont icon-shoucang"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h5>疯狂的红包 不一样的撕名牌 大型家庭亲子户外活动</h5>
+        <div class="rest">
+          <p> <i class="iconfont icon-qizhi"></i> 200人已报名</p>
+          <p> <i class="iconfont icon-shizhong"></i> 本周六开始</p>
+        </div>
+        <div class="type">免费</div>
+      </div>
+    </div>
+
+    <!-- 活动选项模块 -->
+    <div class="item">
+      <div class="pic">
+        <a href="#">
+          <img src="./uploads/item_2.png" alt="">
+        </a>
+        <div class="status">
+          进行中
+        </div>
+        <div class="collect">
+          <i class="iconfont icon-shoucang"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h5>疯狂的红包 不一样的撕名牌 大型家庭亲子户外活动</h5>
+        <div class="rest">
+          <p> <i class="iconfont icon-qizhi"></i> 200人已报名</p>
+          <p> <i class="iconfont icon-shizhong"></i> 本周六开始</p>
+        </div>
+        <div class="type">免费</div>
+      </div>
+    </div>
+
+    <!-- 活动选项模块 -->
+    <div class="item">
+      <div class="pic">
+        <a href="#">
+          <img src="./uploads/item_3.png" alt="">
+        </a>
+        <div class="status">
+          进行中
+        </div>
+        <div class="collect">
+          <i class="iconfont icon-shoucang"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h5>疯狂的红包 不一样的撕名牌 大型家庭亲子户外活动</h5>
+        <div class="rest">
+          <p> <i class="iconfont icon-qizhi"></i> 200人已报名</p>
+          <p> <i class="iconfont icon-shizhong"></i> 本周六开始</p>
+        </div>
+        <div class="type">免费</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- 底部的固定工具栏  tab栏-->
+  <div class="toolbar">
+    <a href="#" class="active">
+      <i class="iconfont icon-index-copy"></i>
+      首页
+    </a>
+    <a href="#">
+      <i class="iconfont icon-youhuiquan"></i>
+      卡券
+    </a>
+    <a href="#">
+      <i class="iconfont icon-iconfront-"></i>
+      我的
+    </a>
+  </div>
+
+
+  <!-- js文件引入，我们要做适配 -->
+  <script src="./js/flexible.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background: url(./images/f1_1.jpg) no-repeat top center/cover;
+      /* background-size: cover; */
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .cloud img {
+      /* 不用加相对了，因为就是相对于整个屏幕 */
+      position: absolute;
+      left: 50%;
+    }
+
+    .yun1 {
+      top: 20px;
+      margin-left: -200px;
+      /* 调用动画 alternate 左右摇摆 跑马灯 infinite 无限循环 linear 匀速*/
+      animation: cloud 2s alternate infinite linear;
+    }
+
+    .yun2 {
+      top: 110px;
+      margin-left: 400px;
+      animation: cloud 3s alternate infinite linear;
+    }
+
+    .yun3 {
+      margin-left: -500px;
+      top: 20%;
+      animation: cloud 1s alternate infinite linear;
+    }
+
+    /* 定义动画 */
+    @keyframes cloud {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(40px, 0, 0);
+      }
+    }
+
+    /* 标题模块 */
+    .font1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* 调用动画 */
+      animation: font1 1s;
+    }
+
+    /* 标题动画 */
+    @keyframes font1 {
+      0% {
+        transform: translate(-50%, -50%) scale(0);
+      }
+
+      25% {
+        transform: translate(-50%, -50%) scale(1.6) rotate(1turn);
+      }
+
+      60% {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    .choice {
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      transform: translateX(-50%);
+    }
+
+    .choice ul {
+      background-color: green;
+    }
+
+    .choice li {
+      float: left;
+      margin-right: 30px;
+      padding: 0 27px;
+    }
+
+    .choice li img {
+      width: 70px;
+      height: 90px;
+    }
+
+    /* 图标动画 */
+    @keyframes jump {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(0, 40px, 0);
+      }
+    }
+
+    /* 调用图标动画 */
+    .j1 {
+      animation: jump 1s alternate infinite linear;
+    }
+
+    .j2 {
+      animation: jump 1s alternate infinite linear 0.5s;
+    }
+
+    .j3 {
+      animation: jump 1s alternate infinite linear 1s;
+    }
+
+    .j4 {
+      animation: jump 1s alternate infinite linear 1.3s;
+    }
+
+    .san {
+      position: absolute;
+      top: 5%;
+      left: 29%;
+      /* 调用动画 */
+      animation: sanj 1s alternate infinite linear;
+    }
+
+    /* 定义热气球动画 */
+    @keyframes sanj {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(0, 40px, 0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cloud">
+    <img src="./images/yun1.png" alt="" class="yun1">
+    <img src="./images/yun2.png" alt="" class="yun2">
+    <img src="./images/yun3.png" alt="" class="yun3">
+  </div>
+
+  <img src="./images/font1.png" alt="" class="font1">
+
+  <div class="choice">
+    <ul>
+      <li>
+        <img src="./images/1.png" alt="" class="j1">
+      </li>
+      <li>
+        <img src="./images/2.png" alt="" class="j2">
+      </li>
+      <li>
+        <img src="./images/3.png" alt="" class="j3">
+      </li>
+      <li>
+        <img src="./images/4.png" alt="" class="j4">
+      </li>
+    </ul>
+  </div>
+
+  <img src="./images/san.png" alt="" class="san">
+</body>
+
+</html>

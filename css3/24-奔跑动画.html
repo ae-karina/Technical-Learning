@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 140px;
+      height: 140px;
+      /* background-color: pink; */
+      background: url(./images/bg.png) no-repeat;
+      /* 调用动画 */
+      /* 多组动画用逗号分隔 */
+      animation: move 1s steps(12) infinite, run 5s forwards;
+      /* animation: run 2s; */
+    }
+
+    /* 定义动画 逐帧动画*/
+    @keyframes move {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        background-position: -1680px 0;
+      }
+    }
+
+    /* 移动动画 */
+    @keyframes run {
+      from {
+        transform: translateX(0px);
+      }
+
+      to {
+        transform: translateX(800px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

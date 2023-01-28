@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      /* translate 百分比相对于自身的宽度和高度 */
+      /* transform: translateX(100%); */
+    }
+
+    .inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      transform: translate(-50%, -50%);
+    }
+
+    /* .inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+    } */
+    /* .inner { */
+    /* width: 200px;
+      height: 200px;
+      background-color: purple; */
+    /* 左侧全部充满 */
+    /* margin-left: auto; */
+    /* 右侧全部充满 */
+    /* margin-right: auto; */
+    /* margin: 0 auto; */
+    /* } */
+
+
+    /* div {
+      margin: auto;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="inner"></div>
+  </div>
+</body>
+
+</html>

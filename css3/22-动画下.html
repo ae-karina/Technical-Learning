@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    /* 第一步，定义动画（声明动画） */
+    @keyframes gun {
+
+      /* 0% {
+        transform: translateX(0);
+      } */
+
+      25% {
+        transform: translateX(1000px);
+      }
+
+      50% {
+        transform: translateX(1000px) translateY(500px);
+      }
+
+      75% {
+        transform: translateX(0px) translateY(500px);
+      }
+
+      100% {
+        transform: translateX(0px) translateY(0px) rotate(1turn);
+      }
+    }
+
+    /* 第二步， 使用动画（调用动画） */
+    .box:first-child {
+      /* animation: 动画名 时间; */
+      animation: gun 2s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    滚起来
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 必须引入 bs的css文件 -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    /* 手动去内边距 */
+    .container {
+      padding: 0;
+    }
+
+    .container div {
+      height: 150px;
+      background-color: pink;
+    }
+
+    .container div:nth-child(2n) {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 版心类 -->
+  <div class="container">
+    <!-- 自己在大屏下占12等份
+    <div class="col-lg-12">123</div>
+    每个人各占6份
+    <div class="col-lg-6">123</div>
+    <div class="col-lg-6">123</div> -->
+    <!-- 上下两个 -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">1</div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">2</div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">3</div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">4</div>
+  </div>
+  <!-- 有内边距，麻烦，不怎么用 -->
+  <div class="container-fluid">123</div>
+
+  <div class="container">
+    <div class="row">123123</div>
+  </div>
+
+</body>
+
+</html>

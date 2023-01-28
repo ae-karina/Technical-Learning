@@ -1,0 +1,23 @@
+//  小驼峰命名法： 除了第一个单词，其余后面单词首字母大写
+@bgColor:hotpink;
+
+.father{
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  // 父级添加
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .son{
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+  }
+  // 2. 鼠标经过大盒子，son盒子边为 hotpink
+  &:hover{
+    .son{
+      background-color: @bgColor;
+    }
+  }
+}

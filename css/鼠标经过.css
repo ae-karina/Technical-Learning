@@ -1,0 +1,6 @@
+.box::before {
+  content: '';
+}
+.box:hover::before {
+  left: 110px;
+}

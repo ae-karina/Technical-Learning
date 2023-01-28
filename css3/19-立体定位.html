@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>立体呈现</title>
+  <style>
+    .cube {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      background-color: pink;
+      transition: all 3s;
+      /* 立体呈现 让子盒子立体的方式来展示 父级添加 */
+      transform-style: preserve-3d;
+    }
+
+    .cube div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+    }
+
+    .front {
+      background-color: orange;
+      /* 向我们面前拉（移动）200像素 正值 */
+      transform: translateZ(100px);
+    }
+
+    .back {
+      background-color: green;
+      transform: translateZ(-100px);
+    }
+
+    .cube:hover {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cube">
+    <div class="front">前面</div>
+    <div class="back">后面</div>
+  </div>
+</body>
+
+</html>

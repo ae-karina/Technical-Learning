@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      display: flex;
+      /* 改变主轴方向 */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 58px;
+      background-image: linear-gradient(180deg, #3c83fa, #50b2fa);
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .box span:nth-child(1) {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 4px;
+      background: url(./mimg/nav测量坐标用的.png) no-repeat;
+      /* 背景图片必须要缩放 宽度缩放为 28 高度 auto 自动等比例缩放 */
+      /* background-size: x y; */
+      background-size: 28px auto;
+    }
+
+    .plan span:nth-child(1) {
+      background-position: 0 -168px;
+    }
+
+    .train span:nth-child(1) {
+      background-position: 0 -362px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box plan">
+    <span></span>
+    <span>机票</span>
+  </div>
+  <div class="box train">
+    <span></span>
+    <span>火车票</span>
+  </div>
+</body>
+
+</html>

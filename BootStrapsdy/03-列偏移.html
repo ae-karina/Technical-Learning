@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    .one div {
+      height: 150px;
+      background-color: purple;
+    }
+
+    .one div:last-child {
+      background-color: pink;
+    }
+
+    .two div {
+      height: 150px;
+      background-color: pink;
+    }
+
+    .three {
+      height: 150px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row one">
+      <div class="col-lg-4">左侧</div>
+
+      <!-- 列偏移 -->
+      <div class="col-lg-4 col-lg-offset-4">右侧</div>
+    </div>
+
+    <div class="row two">
+      <div class="col-lg-8 col-lg-offset-2"></div>
+    </div>
+
+    <div class="row three">
+      <div class="col-lg-3 col-lg-offset-3"></div>
+      <div class="col-lg-3 col-lg-offset-3"></div>
+    </div>
+  </div>
+</body>
+
+</html>

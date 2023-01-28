@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* flex 布局 */
+      display: flex;
+      /* 主轴的对齐方式 flex-start 左侧*/
+      /* justify-content: flex-end; */
+
+      /* 子盒子水平居中 */
+      /* justify-content: center; */
+      /* 每个盒子左右都有缝隙，2倍 */
+      /* justify-content: space-around; */
+      /* 显示效果：两侧没缝隙space-between */
+      /* justify-content: space-between; */
+      justify-content: space-evenly;
+      width: 800px;
+      height: 200px;
+      border: 1px solid pink;
+    }
+
+    .box>span {
+      width: 200px;
+      /* height: 200px; */
+      background-color: pink;
+    }
+
+    .box span:nth-child(2n) {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </div>
+</body>
+
+</html>
