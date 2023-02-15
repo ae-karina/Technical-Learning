@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    // for (var i = 0; i < 100; i++) {
+    //   console.log(i);
+    // }
+
+    // 写法
+    // for(){
+    // 执行语句
+    // }
+    // 步骤:
+    // 1、声明变量
+    // i = 0
+    // 2、if(i< 10){
+    // console.log(i) 
+    // }
+    // console.log(i); 
+    // 3、i++ 
+
+    // var i = 0;
+    // for (; i < 10;) {
+    //   console.log(i);
+    //   i++;
+    // }
+
+    // while (i < 10) {
+    //   console.log(i);
+    //   i++;
+    // }
+
+    // var i = 1;
+    // for (; i;) {
+    //   console.log(1);
+    //   i++;
+
+    //   if (i == 11) {
+    //     break;
+    //     // i = 0  这样是false，也可以停止
+    //   }
+    // }
+
+    // 从0开始做加法，加到什么什么时候总和是小于100的：
+    // var sum = 0;
+    // for (var i = 0; i < 100; i++) {
+    //   sum += i;
+
+    //   if (sum >= 100) {
+    //     break;
+    //   }
+
+    //   console.log(i, sum);
+    // }
+
+    // 100以内的数跳过可以被7整除的或个位数是7的数
+    /* for (var i = 0; i <= 100; i++) {
+      if (i % 7 == 0 || i % 10 == 7) {
+
+      } else {
+        console.log(i);
+      }
+    } */
+    // 这两个执行相等
+    /* for (var i = 0; i <= 100; i++) {
+      if (i % 7 == 0 || i % 10 == 7) {
+        contiune;
+      }
+      console.log(i);
+    } */
+
+    // var sum = 0;
+    // for (var i = 0; i < 10; i++) {
+    //   sum += i;
+    // }
+
+    // 可以被4，5，6整除的数
+    // for (var i = 0; i <= 10; i++) {
+    //   if (i % 4 == 0 || i % 5 == 0 || i % 6 == 0) {
+    //     console.log(i);
+    //   }
+    // }
+
+    // 打印0-100的数
+    // （）只能有一句，不能写比较
+    // （）不能出现i++ i--
+    // var i = 100;
+    // for (; i--;) {
+    //   console.log(i);
+    // }
+
+    // var i = 0;
+    // while (i < 10) {
+    //   console.log(i);
+    //   i++;
+    // }
+
+    // do {
+    //   console.log('我要开始循环了');
+    //   i++;
+    // } while (i < 10);
+
+    // var i = 10;
+    // var bool = i < 10;
+    // console.log(bool);
+    // for (var i = 0; i < 10; i++) {}
+
+
+    // var i = 0;
+    // for (; i;) {
+    //   console.log(i);
+    //   i++;
+    //   if (i == 11) {
+    //     i = 0; // undefined NaN null ""  0 false
+    //   }
+    // }
+
+
+    // 不管怎么样，先执行一次，实际不会怎么用
+    // var i = 0;
+    // do {
+    //   console.log('我要开始循环了');
+    //   i++;
+    // } while (i < 10);
+
+    // 10的N次方
+    // 10 100 1000 10000 10000
+    // var n = 5;
+    // var num = 1;
+    // for (i = 0; i < n; i++) {
+    //   num *= 10;
+    // }
+    // console.log(num);
+
+
+    // n的阶乘
+    // var n = 5;
+    // num = 1;
+    // for (var i = 1; i <= 5; i++) {
+    //   num *= i;
+    // }
+    // console.log(num);
+
+
+    // 把这个数打印出987
+    // var num = 789;
+
+    // var a = num % 10;
+    // var b = (num - a) % 100 / 10;
+    // var c = (num - a - b * 10) / 100;
+    // console.log("" + a + b + c);
+
+
+    // 打印三个数中的最大的数
+    // var a = 1,
+    //   b = 2,
+    //   c = 3;
+
+    // if (a > b) {
+    //   if (a > c) {
+    //     console.log(a);
+    //   } else {
+    //     console.log(c);
+    //   }
+    // } else {
+    //   if (b > c) {
+    //     console.log(b);
+    //   } else {
+    //     console.log(c);
+    //   }
+    // }
+
+    // 打印100以内的质数
+    // 仅仅能被1和自己整除的数
+    // var c = 0;
+    // for (var i = 2; i < 100; i++) {
+    //   for (var j = 1; j <= i; j++) {
+    //     if (i % j == 0) {
+    //       c++;
+    //     }
+    //   }
+    //   if (c == 2) {
+    //     console.log(i);
+    //   }
+    //   c = 0;
+    // }
+
+    // 引用值
+    // array object function date RegExp
+    // arry 数组  每个逗号前面有空格
+    // var arr = [1, 2, 3, 4, 5, 6, 7, undefined, null]
+    // console.log(arr[5]);
+    // arr[3] = null;
+    // console.log(arr);
+    // console.log(arr.length);
+    // for (var i = 0; i < arr.length; i++) {
+    //   arr[i] += 2;
+    // }
+
+    // object 对象
+    // var person = {
+    //   name: '小夏',
+    //   // 属性名/键名：属性值/键值，
+    //   agr: 18,
+    //   height: 180,
+    //   weight: 140,
+    //   job: 'WEB开发工程师'
+    // }
+    // person.name = '小王'
+    // console.log(person)
+
+    // typeof (123);把数值的类型显示出来
+    // typeof 123  这个写法不好维护
+    // number string boolean object undifined  function
+    // object = 引用类型   object/arry  属于大的Object  O：引用类型
+    // object  null 返回的是Object
+    // console.log(typeof ("1" - "1"));  返回number
+    // console.log(typeof (a)); undifined
+    // console.log(typeof (typeof (a)));  数据类型的名称是string
+    // console.log(typeof (+)); //报错，+不是类型
+
+
+    // 显示类型转换/隐式类型转换
+    // 显式类型转换
+    // var a = '1a';NAN 3.14  3.14
+    // console.log(typeof (Number(a)) + '-' + Number(a));
+    // var a = Nan;  NaN '3.99'
+    // console.log(typeof (parseInt(a)) + '-' + parseInt(a));
+    // var a = '10'; 16
+    // console.log(pareseInt(a, 16)); 2-36
+    // var a = 'b';
+    // 0123456789ab
+    // console.log(pareseInt(a, 16));
+    // 01
+    // 0 - 9
+    // console.log(pareseInt('abc123'));  NAN
+    // console.log(pareseInt('123abc')); 如果开始的数据是数字才会显示 
+
+    // 16进制 -> 颜色值 16值 HEX颜色值 #fff  #f0f0f0
+    // var num=parseFloat('3.1415926');
+    // console.log(num.toFixed(2));  四舍五入，能保留小数点最后两位
+    // console.log(typeof (123 + '')) string 
+    // var str = '3.14';
+    // console.log(str.toString());  string和toString没什么区别
+    // null和undifined没有toString方法
+    // var str = '100';
+    // toString(radix)
+    // console.log(parseInt(100,2).toString(16)); 二进制为基础转换为10进制的数，以10进制的数转换为16进制
+    // console.log(Boolean(null));
+    // undefined null NaN"" 0 false 
+    // 其他都是类型转换
+
+    // var a = 1234;
+    // console.log(String(a).length);
+
+    // 隐式类型转换
+
+    // var a = '123';Number(a)
+    // a++;
+    // console.log(a);
+
+    // var a = "a" + 1; String(1);
+    // var a = '3' * 2;  *  / -    str ->number
+
+    // var a = 1 > '2';   Number
+    // var a= 'a'>'b' 两个字符串比较的时候才会进行暗示ascall
+    // > < >= <= 都要进行number转换
+
+    // var a = 1 != '2'; true
+
+    // var a=1 ==='1'; 不进行隐式转换
+
+    // var a = NaN === NaN;  NaN不等于任何东西
+
+    // var a1 = 2 > 1 > 3;
+    // var a2 = 2 > 1 == 1;  true
+
+    // var a1 = undefined == 0;
+    // var a2 = null === 0; 都是false
+    // var a3 = undefined == null; true
+    // var a3 = undefined === null; false
+    // var a = NaN == NaN; false
+    // console.log(a)
+
+
+    // var num = '123';
+    // console.log(typeof (-num) + ':' + +num);  加了正负号也是要转换为Number类型的
+
+    // console.log(isNaN('a')); true 非数 null转换num=0，false   undefined Num -> NaN
+
+    // Number(值) - > NaN - > bool   
+
+
+
+    // 作业
+    // 斐波那契数列   黄金分割数列   兔子数列
+    // 1  1  2  3  5  8
+    // for 算出第N位
+    // var n = parseInt(window.prompt('N=?'));
+
+    /* n1 n2 n3
+    1   1   2   3   5    8
+        n1  n2  n3
+            n1  n2  n3
+                n1  n2   n3 */
+
+    // var n = parseInt(window.prompt('请输入第几位'));
+    // if (n <= 0) {
+    //   console.log('输入错误');
+
+    // } else {
+    //   var n1 = 1,
+    //     n2 = 1,
+    //     n3;
+    //   if (n <= 2) {
+    //     console.log(1);
+    //   }
+    //   // var n1 = n2 = 1; function不能这么写 全局变量会导致变量的泄露
+
+    //   for (var i = 2; i < n; i++) {
+    //     n3 = n1 + n2;
+    //     n2 = n1;
+    //     n2 = n3;
+    //   }
+    //   console.log(n3);
+    // }
+
+    // 1、2位都是undefined
+
+
+    // 日程安排
+    // // weekday time am/pm
+    // var weekday = window.prompt('请输入星期几');
+
+    // var time = window.prompt('请输入上午或下午');
+
+    // switch (weekday) {
+    //   case '星期一':
+    //     if (time == '上午') {
+    //       console.log('看书');
+    //     } else if (time === '下午') {
+    //       console.log('逛街');
+    //     }
+    //     break;
+    // }
+  </script>
+</body>
+
+</html>
