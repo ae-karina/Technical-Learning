@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .clock {
+      width: 600px;
+      height: 600px;
+      background: url(./images/clock.jpg)no-repeat;
+      margin: 50px auto 0;
+      position: relative;
+    }
+
+    .hh,
+    .mm,
+    .ss {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url(./images/hour.png) no-repeat center;
+    }
+
+    .mm {
+      background: url(./images/minute.png)no-repeat center;
+      transform: rotate(270deg);
+    }
+
+    .ss {
+      background: url(./images/second.png) no-repeat center;
+      transform: rotate(0deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    <div class="hh"></div>
+    <div class="mm"></div>
+    <div class="ss"></div>
+  </div>
+
+  <script>
+    const second = document.querySelector('.ss');
+
+    let du = 0
+    setInterval(function () {
+      du += 6
+      if (du >= 360) {
+        du = 0
+      }
+      second.style.transform = `rotate(${du}deg)`;
+    }, 1000);
+  </script>
+</body>
+
+</html>

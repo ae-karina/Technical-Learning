@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>点击</button>
+  <script>
+    /* const btn = document.querySelector('button')
+    btn.addEventListener('click', function () {
+      const num = Math.random()
+      console.log(num)
+    }) //立即函数执行完毕之后会被立马回收，变量没有用了  再次执行的时候就会生成新的变量，所以可以在函数里面用const */
+
+    /* const num = 10
+    const btn = document.querySelector('button')
+    btn.addEventListener('click', function () {
+      const num = Math.random()
+      console.log(num)
+    }) //全局变量和局部变量不影响 */
+
+    const num = 10
+    const btn = document.querySelector('button')
+    btn.addEventListener('click', function () {
+      num = Math.random() //这样就会报错
+      console.log(num)
+    })
+  </script>
+</body>
+
+</html>

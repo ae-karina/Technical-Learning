@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 以前this的指向： 谁调用的这个函数， this 就指向谁
+    // console.log(this) // window
+    // // 普通函数
+    // function fn() {
+    //   console.log(this) // window
+    // }
+    // window.fn()
+    // // 对象方法里面的this
+    // const obj = {
+    //   name: 'andy',
+    //   sayHi: function () {
+    //     console.log(this) // obj
+    //   }
+    // }
+    // obj.sayHi()
+
+
+    // 2. 箭头函数的this 是上一层作用域的this 指向
+    // const fn = () => {
+    //   console.log(this) // window  里面的函数没有this 往上一层去找 即是上一层的window
+    // }
+    // fn()
+    // 对象方法箭头函数 this
+    // const obj = {
+    //   uname: 'pink老师',
+    //   sayHi: () => {
+    //     console.log(this) // this 指向谁？ window  往上找 obj
+    //   }
+    // }
+    // obj.sayHi()
+
+    // 因为箭头函数没有this 是从当前作用域的上一层作用域this 的指向 sayHi的上一层是obj obj的谁调用 this就指向谁 是window调用 所有是window
+    // 前面解释得不行，乱说一套，要说就得说出和传统的不同，两者都是obj的调用，关键在于后面sayHi对应是箭头函数，没有this，直接从obj的上一层window
+
+    // 懂了，因为箭头函数里的this要看它上一级的作用域  
+    // 箭头函数没有this 他是继承父级的this 所以this的指向就是父级this的指向
+    const obj = {
+      uname: 'pink老师',
+      sayHi: function () {
+        console.log(this) // obj
+        let i = 10
+        const count = () => {
+          console.log(this) // obj
+        }
+        count()
+      }
+    }
+    obj.sayHi()
+  </script>
+</body>
+
+</html>
