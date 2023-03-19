@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Symbol 创建对象属性</title>
+ </head>
+
+ <body>
+     <script>
+         //向对象中添加方法 up down
+         let game = {
+             name: '俄罗斯方块',
+             up: function () {},
+             down: function () {}
+         };
+
+         //声明一个对象
+         // let methods = {
+         //     up: Symbol(),
+         //     down: Symbol()
+         // };
+
+         // game[methods.up] = function(){
+         //     console.log("我可以改变形状");
+         // }
+
+         // game[methods.down] = function(){
+         //     console.log("我可以快速下降!!");
+         // }
+
+         // console.log(game); 
+
+         //
+         let youxi = {
+             name: "狼人杀",
+             [Symbol('say')]: function () {
+                 console.log("我可以发言")
+             },
+             [Symbol('zibao')]: function () {
+                 console.log('我可以自爆');
+             }
+         }
+
+         console.log(youxi)
+
+         // 最后在对象youxi外部调用：youxi[say]()。这样就可以调用"我可以发言"那个方法了
+         // 这里调用我只知道用另一种方式：先在对象youxi外定义变量let say = Symbol('say')
+         // 再把对象youxi内部中括号的Symbol('say')替换成刚刚在外面定义的变量say，即[say]: function..
+         // 总结：为了防止你创建和方法和对象本身的方法冲突，选择在另一个对象中用symbol创建独一无二的方法，用[]调用，不会污染本身对象中的方法
+     </script>
+ </body>
+
+ </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigInt</title>
+</head>
+
+<body>
+    <script>
+        //大整型
+        // let n = 521n;
+        // console.log(n, typeof(n));
+
+        //函数
+        // let n = 123;
+        // console.log(BigInt(n));转化
+        // console.log(BigInt(1.2));浮点型报错
+
+        //大数值运算
+        let max = Number.MAX_SAFE_INTEGER;
+        console.log(max);
+        console.log(max + 1);
+        console.log(max + 2); //不能再进行更大的运算结果了 转换为BigInt解决
+
+        console.log(BigInt(max))
+        console.log(BigInt(max) + BigInt(1)) //不能和普通的整型进行运算，也要转换
+        console.log(BigInt(max) + BigInt(2))
+    </script>
+</body>
+
+</html>
