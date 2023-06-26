@@ -1,266 +1,283 @@
 /* 写用户中心的css文件 */
 
-.xtx-user{
-    padding: 20px 0 30px 0;
-    background-color: #f5f5f5;
-}
-.xtx-user-l{
-    float: left;
-    width: 224px;
-    padding-bottom: 50px;
-    background-color: #fff;
-}
-.xtx-user-r{
-    float: right;
-    width: 996px;
+.xtx-user {
+  padding: 20px 0 30px 0;
+  background-color: #f5f5f5;
 }
 
-.xtx-user-l h4{
-    padding: 25px 0 10px 52px;
-    font-size: 16px;
-    font-weight: 400;
+.xtx-user-l {
+  float: left;
+  width: 224px;
+  padding-bottom: 50px;
+  background-color: #fff;
 }
 
-.xtx-user-l .links{
-    border-bottom: 2px solid #f4f4f4;
-}
-.xtx-user-l .links a{
-    position: relative;
-    display: block;
-    padding: 15px 0 15px 52px ;
-    font-size: 14px;
-    color: #666;
-}
-.xtx-user-l .last{
-    border-bottom: 0;
-}
-.xtx-user-l .links a:hover{
-    color: #5cb99e;
-}
-.xtx-user-l .links a:hover::before{
-    content: '';
-    position: absolute;
-    top: 23px;
-    left: 35px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #5cb99e;
+.xtx-user-r {
+  float: right;
+  width: 996px;
 }
 
-.xtx-user-info{
-    width: 996px;
-    height: 132px;
-    background-color: #27ba9c;
+.xtx-user-l h4 {
+  padding: 25px 0 10px 52px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.user-info{
-    float: left;
-    margin: 23px 60px 0;
-}
-.user-info img{
-    width: 85px;
-    height: 85px;
-    margin-right: 20px;
-}
-.user-info span{
-    width: 53px;
-    color: #fff;
-    font-size: 16px;
+.xtx-user-l .links {
+  border-bottom: 2px solid #f4f4f4;
 }
 
-.user-choice{
-    float: right;
-    margin: 33px 53px 0 0;
-}
-.user-choice .set{
-    float: left;
-    margin-right: 100px;
-}
-.user-choice .set:last-child{
-    margin-right: 0;
-}
-.user-choice .set::before{
-    display:block ;
-    content: '';
-    width: 30px;
-    height: 32px;
-    margin: 0 auto;
-    background:url(../images/sprites.png) no-repeat 0 -68px;     
-}
-.user-choice .set p{
-    margin-top: 17px;
-    font-size: 16px;
-    color: #fff;
+.xtx-user-l .links a {
+  position: relative;
+  display: block;
+  padding: 15px 0 15px 52px;
+  font-size: 14px;
+  color: #666;
 }
 
-.xtx-book{
-    overflow: hidden;
-    margin-top: 20px;
-    padding: 0 12px;
-    background-color: #fff;
-}
-.book-hd{
-    height: 60px;
-    line-height: 60px;
-}
-.book-hd h3{
-    float: left;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #333;
+.xtx-user-l .last {
+  border-bottom: 0;
 }
 
-.book-hd .all{
-    float: right;
-    margin-left: 10px;
-    font-size: 16px;
-    color: #999;
-    
-}
-.book-hd .all::after{
-    display: inline-block;
-    content: '';
-    width: 8px;
-    height: 13px;
-    margin-left: 13px;
-    background: url(../images/sprites.png) no-repeat 0px -109px;
+.xtx-user-l .links a:hover {
+  color: #5cb99e;
 }
 
-
-
-
-.book-b{
-    
-    height: 137px;
-    margin-bottom: 20px;
-    border: 1px solid #f4f4f4;
-}
-.book-info{
-    float: left;
-    width: 590px;
-    border-right: 1px solid #f4f4f4;
-    padding: 15px;
-}
-.book-info img{
-    width: 106px;
-    height: 106px;
+.xtx-user-l .links a:hover::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 35px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #5cb99e;
 }
 
-
-.book-info span{
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-    
+.xtx-user-info {
+  width: 996px;
+  height: 132px;
+  background-color: #27ba9c;
 }
 
-.book-info span p:nth-child(1){
-    font-size: 16px;
+.user-info {
+  float: left;
+  margin: 23px 60px 0;
 }
 
-.book-info span p:nth-child(2){
-    font-size: 14px;
-    color: #999;
+.user-info img {
+  width: 85px;
+  height: 85px;
+  margin-right: 20px;
 }
 
-.book-info i{
-    margin-right: 10px;
+.user-info span {
+  width: 53px;
+  color: #fff;
+  font-size: 16px;
 }
 
-.sta{
-    float: right;
-    margin: 41px 80px 0 0;
-    text-align: center;
-    line-height: 23px;
-}
-.sta p:nth-child(1){
-    font-size: 14px;
-    color: #e05e30;
-}
-.sta p:nth-child(2){
-    font-size: 14px;
-    color: #999;
-}
-.book-pic{
-    float: left;
-    width: 200px;
-    padding: 30px 20px;
-    border-right: 1px solid #f4f4f4;
-    line-height: 23px;
-    text-align: center;
-    font-size: 14px;
-    color: #999;
+.user-choice {
+  float: right;
+  margin: 33px 53px 0 0;
 }
 
-.book-pic p:nth-child(1){
-    color: #9a2e1f;
+.user-choice .set {
+  float: left;
+  margin-right: 100px;
 }
 
-.book-cho{
-    float: right;
-    line-height: 23px;
-    padding: 30px 40px;
-}
-.book-cho a{
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-}
-.book-cho a:nth-child(1){
-    width: 100px;
-    height: 30px;
-    margin-bottom: 15px;
-    line-height: 30px;
-    background-color: #27ba9b;
-    color: #fff;
+.user-choice .set:last-child {
+  margin-right: 0;
 }
 
-.xtx-col{
-    padding: 0 12px;
-    margin-bottom: 20px;
-    background-color: #fff;
+.user-choice .set::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/sprites.png) no-repeat 0 -68px;
 }
 
-.xtx-col .book-hd{
-    border-bottom: 1px solid #e8e8e8;
+.user-choice .set p {
+  margin-top: 17px;
+  font-size: 16px;
+  color: #fff;
 }
 
-.col-bd{
-    overflow: hidden;
+.xtx-book {
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 0 12px;
+  background-color: #fff;
 }
 
-.col-bd li{
-    float: left;
-    width: 242px;
-    height: 304px;
-    margin-right: 1px;
+.book-hd {
+  height: 60px;
+  line-height: 60px;
+}
 
+.book-hd h3 {
+  float: left;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
 }
-.col-bd li:last-child{
-    margin-right: 0;
+
+.book-hd .all {
+  float: right;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #999;
 }
-.col-bd li img{
-    display: block;
-    width: 153px;
-    height: 153px;
-    margin: 15px auto;
+
+.book-hd .all::after {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 13px;
+  margin-left: 13px;
+  background: url(../images/sprites.png) no-repeat 0px -109px;
 }
-.xtx-col li h4{
-    padding: 0 30px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 400;
-    
+
+.book-b {
+  height: 137px;
+  margin-bottom: 20px;
+  border: 1px solid #f4f4f4;
 }
-.xtx-col li p{
-    color: #9a2e1f;
-    margin:15px 0 0 30px;
-    font-size: 16px;
+
+.book-info {
+  float: left;
+  width: 590px;
+  border-right: 1px solid #f4f4f4;
+  padding: 15px;
 }
-.xtx-col li p span{
-        font-size: 22px;
+
+.book-info img {
+  width: 106px;
+  height: 106px;
 }
-    
+
+.book-info span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.book-info span p:nth-child(1) {
+  font-size: 16px;
+}
+
+.book-info span p:nth-child(2) {
+  font-size: 14px;
+  color: #999;
+}
+
+.book-info i {
+  margin-right: 10px;
+}
+
+.sta {
+  float: right;
+  margin: 41px 80px 0 0;
+  text-align: center;
+  line-height: 23px;
+}
+
+.sta p:nth-child(1) {
+  font-size: 14px;
+  color: #e05e30;
+}
+
+.sta p:nth-child(2) {
+  font-size: 14px;
+  color: #999;
+}
+
+.book-pic {
+  float: left;
+  width: 200px;
+  padding: 30px 20px;
+  border-right: 1px solid #f4f4f4;
+  line-height: 23px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.book-pic p:nth-child(1) {
+  color: #9a2e1f;
+}
+
+.book-cho {
+  float: right;
+  line-height: 23px;
+  padding: 30px 40px;
+}
+
+.book-cho a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.book-cho a:nth-child(1) {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  background-color: #27ba9b;
+  color: #fff;
+}
+
+.xtx-col {
+  padding: 0 12px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.xtx-col .book-hd {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.col-bd {
+  overflow: hidden;
+}
+
+.col-bd li {
+  float: left;
+  width: 242px;
+  height: 304px;
+  margin-right: 1px;
+}
+
+.col-bd li:last-child {
+  margin-right: 0;
+}
+
+.col-bd li img {
+  display: block;
+  width: 153px;
+  height: 153px;
+  margin: 15px auto;
+}
+
+.xtx-col li h4 {
+  padding: 0 30px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.xtx-col li p {
+  color: #9a2e1f;
+  margin: 15px 0 0 30px;
+  font-size: 16px;
+}
+
+.xtx-col li p span {
+  font-size: 22px;
+}

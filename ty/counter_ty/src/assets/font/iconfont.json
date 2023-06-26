@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577315",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "5532899",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "7434461",
+      "name": "删除",
+      "font_class": "shanchu1",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "11139872",
+      "name": "除号",
+      "font_class": "chengbeifen",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "22380440",
+      "name": "等于",
+      "font_class": "dengyu",
+      "unicode": "eda1",
+      "unicode_decimal": 60833
+    },
+    {
+      "icon_id": "26847618",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    }
+  ]
+}
